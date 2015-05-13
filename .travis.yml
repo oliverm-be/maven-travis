@@ -1,0 +1,10 @@
+language: java
+sudo: false
+before_install:
+  - "export MAVEN_OPTS='-Xmx2g -XX:MaxPermSize=2048m'"
+jdk:
+  - oraclejdk7
+cache:
+  directories:
+  - $HOME/.m2
+script: mvn help:system
