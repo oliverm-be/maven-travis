@@ -3,4 +3,5 @@
   <groupId>be.olivermay</groupId>
   <artifactId>maven-travis</artifactId>
   <version>1.0.0-SNAPSHOT</version>
+  <name>Example project to configure travis and maven</name>
 </project>
