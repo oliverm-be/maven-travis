@@ -1,11 +1,7 @@
 language: java
 sudo: false
 before_install:
-  - "echo \"export MAVEN_OPTS='-Xmx2g -XX:MaxPermSize=2048m'\" > ~/.mavenrc"
-  - "cat ~/.mavenrc"
-  - "export MAVEN_SKIP_RC"
-  - "cat /etc/mavenrc"
-  - "export"
+  - "echo \"export MAVEN_OPTS='-Dmaven.repo.local=$HOME/.m2/repository -Xmx2g -XX:MaxPermSize=2048m'\" > ~/.mavenrc"
 jdk:
   - oraclejdk7
 cache:
