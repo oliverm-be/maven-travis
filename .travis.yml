@@ -1,7 +1,8 @@
 language: java
 sudo: false
 before_install:
-  - "export MAVEN_OPTS='-Xmx2g -XX:MaxPermSize=2048m'"
+  - "echo \"export MAVEN_OPTS='-Xmx2g -XX:MaxPermSize=2048m'\" > ~/.mavenrc"
+  - "cat ~/.mavenrc"
   - "export MAVEN_SKIP_RC"
   - "cat /etc/mavenrc"
   - "export"
