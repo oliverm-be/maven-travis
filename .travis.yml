@@ -3,6 +3,8 @@ sudo: false
 before_install:
   - "export MAVEN_OPTS='-Xmx2g -XX:MaxPermSize=2048m'"
   - "export MAVEN_SKIP_RC"
+  - "cat /etc/mavenrc"
+  - "export"
 jdk:
   - oraclejdk7
 cache:
